@@ -1,11 +1,15 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import { App } from './App';
+import React from 'react';
+
+import { HashRouter as Router } from 'react-router-dom';
+import App from './App';
+
+// import 'bulma/css/bulma.css';
+// import '@fortawesome/fontawesome-free/css/all.css';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root'),
 );
